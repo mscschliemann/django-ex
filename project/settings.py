@@ -84,8 +84,17 @@ WSGI_APPLICATION = 'wsgi.application'
 
 from . import database
 
+#DATABASES = {
+#    'default': database.config()
+#}
+
 DATABASES = {
-    'default': database.config()
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "OPTIONS": {
+            "read_default_file": ".conf/my.cnf",
+        },
+    }
 }
 
 
