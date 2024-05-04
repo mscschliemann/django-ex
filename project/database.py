@@ -15,9 +15,10 @@ def config():
     if service_name:
         engine = engines.get(os.getenv('DATABASE_ENGINE'), engines['sqlite'])
     else:
-        #engine = engines['sqlite']
-        engine = engines['mysql']
-    name = os.getenv('DATABASE_NAME')
+        engine = engines['sqlite']
+        #engine = engines['mysql']
+    #names = os.getenv('DATABASE_NAME')
+    name = os.getenv('DATABASE_NAMES')
     if not name and engine == engines['sqlite']:
         name = os.path.join(settings.BASE_DIR, 'db.sqlite3')
     return {

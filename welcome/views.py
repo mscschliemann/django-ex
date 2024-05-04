@@ -17,6 +17,7 @@ def index(request):
         'hostname': hostname,
         'database': database.info(),
         'count': PageView.objects.count()
+        "name" = os.getenv('DATABASE_NAME')
     })
 
 def health(request):
