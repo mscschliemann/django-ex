@@ -95,8 +95,8 @@ DATABASES = {
         'NAME': 'sampledb', 
         'USER': 'root', 
         'PASSWORD': '', 
-        'HOST': os.environ['OPENSHIFT_DB_HOST'],
-        'PORT': os.environ['OPENSHIFT_DB_PORT'],
+        'HOST': os.environ['OPENSHIFT_MYSQL_DB_HOST'],
+        'PORT': os.environ['OPENSHIFT_MYSQL_DB_PORT'],
     }
 }
 
