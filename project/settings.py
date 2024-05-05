@@ -88,12 +88,15 @@ from . import database
 #    'default': database.config()
 #}
 
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "OPTIONS": {
-            "read_default_file": "conf/my.cnf",
-        },
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sampledb', 
+        'USER': 'root', 
+        'PASSWORD': '', 
+        'HOST': os.environ['OPENSHIFT_DB_HOST'],
+        'PORT': os.environ['OPENSHIFT_DB_PORT'],
     }
 }
 
