@@ -95,7 +95,7 @@ DATABASES = {
         'NAME': 'sampledb', 
         'USER': 'root', 
         'PASSWORD': '', 
-        'HOST': 'mysql-1-jsctq',
+        'HOST': '10.128.3.203',
         'PORT': 3306,
     }
 }
