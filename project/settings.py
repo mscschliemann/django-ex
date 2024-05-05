@@ -95,11 +95,12 @@ DATABASES = {
         'NAME': 'sampledb', 
         'USER': 'dbuser', 
         'PASSWORD': 'password', 
-        'HOST': 'mysql',
+        'HOST': 'localhost',
         'PORT': 3306,
     }
 }
 
+10.128.11.247
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
